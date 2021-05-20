@@ -18,6 +18,18 @@ $backGroud: #bce0fd;
   }
 }
 
+@media (max-width: 700px) {
+  .App {
+    font-size: small;
+  }
+}
+
+@media (max-width: 500px) {
+  .App {
+    font-size: x-small;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

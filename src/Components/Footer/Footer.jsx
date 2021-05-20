@@ -22,7 +22,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">
-                Copyright &#8471; Thel Tstudio, All rights reserved by Redpositive Service OPC Pvt.Ltd
+                Copyright &#8471; TheITstudio, All rights reserved by Redpositive Service OPC Pvt.Ltd
             </div>
         </div>
     )

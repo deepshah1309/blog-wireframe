@@ -11,6 +11,11 @@
     align-items: center;
   }
 
+  &-link {
+    text-decoration: none;
+    color: #1b90f0;
+  }
+
   &-element {
     padding: 10px;
     border-radius: 20px;
