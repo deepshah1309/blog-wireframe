@@ -11,7 +11,7 @@ const Card=()=>{
                     <div><i class="fas fa-minus-square"></i>&nbsp; &nbsp;120</div>
                     <div><i class="fas fa-clock"></i>&nbsp; &nbsp;June2,2021</div>
                 </div>
-                <div className="title">
+                <div className="title1">
                     <p>
                         The amazing world of The non-standard search Engines
                     </p>

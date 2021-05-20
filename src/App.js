@@ -1,19 +1,18 @@
-
+import Navbar from "./Components/NavBar/NavBar.jsx";
 import Footer from "./Components/Footer/Footer";
-import NavBar from "./Components/NavBar/NavBar";
-import Search from "./Components/Search/Search";
 import Main from "./Components/Main/Main";
+import Search from "./Components/Search/Search";
+import "./App.scss";
 
 function App() {
   return (
-    <>
-      <div>
-          <NavBar/>
-          <Search/>
-          <Main/>
-          <Footer/>
-      </div>
-    </>
+    <div className="App">
+      <Navbar />
+      <Search/>
+      <Main/>
+
+      <Footer />
+    </div>
   );
 }
 

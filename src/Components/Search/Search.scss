@@ -1,0 +1,57 @@
+.search_area{
+background-image: url("./assets/Wave.svg");
+background-size:cover;
+text-align:center;
+margin-top:0;
+background-repeat: no-repeat;
+background-position-x: right;
+height:700px;
+.Blog_title{
+    padding-top:250px;
+    h3{
+        color:#1b90f0;
+    }
+}
+.search_input{
+    margin-top:3rem;
+    
+        width: 100%;
+        margin-bottom: 10px;
+   
+  
+}
+}
+.centralised{
+    text-align: center;
+    margin:0 auto;
+    width:100vw;
+}
+.input-container {
+    
+    display: flex;
+    padding:0 auto;
+   border-radius:20px;
+  
+    max-width:400px;
+    margin:3rem auto auto auto;
+   
+  }
+  
+  .icon {
+    padding: 10px;
+  
+    color:#1b90f0;
+    background-color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border:none;
+  }
+  
+  
+  

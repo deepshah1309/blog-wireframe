@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #bce0fd;
+  color: #1b90f0;
+
+  &-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &-element {
+    padding: 10px;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: #fff;
+      transition: all 1s;
+    }
+  }
+}

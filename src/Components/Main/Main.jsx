@@ -10,7 +10,11 @@ const Main=()=>{
                 <Card/>
                 <Card/>
                 <Card/>
-                
+                <Card/>
+                <Card/>
+                <Card/>
+                <br></br>
+                <div className="More"><button className="More_btn">More</button></div>
                 
         </div>
     )
