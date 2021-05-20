@@ -1,0 +1,37 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #bce0fd;
+
+  &-top {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-helper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  &-address {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &-account {
+    padding: 10px;
+  }
+
+  &-bottom {
+    padding: 10px;
+    background-color: #053257;
+    color: #bce0fd;
+  }
+}
