@@ -1,0 +1,78 @@
+$image-background:#bce0fd;
+.card{
+    width:28vw;
+    height:500px;
+     box-sizing:border-box;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     margin-left:auto;
+    border-radius: 16px;
+   
+    margin-top:2rem;
+    .imagepart{
+        height:60%;
+        display:block;
+        border-top-left-radius:16px;
+        border-top-right-radius: 16px;
+        background-color:$image-background;
+    }
+    .container{
+        height:40%;
+        display:flex;
+        flex-direction:column;
+        padding:0 40px;
+        
+        background:white;
+        border-bottom-left-radius:16px;
+        border-bottom-right-radius: 16px;
+        color:$image-background;
+        justify-content: space-between;
+        .insights{
+            color:#5cb3fc;
+            height:10%;
+            padding-top:1rem;
+                
+            display: flex;
+            justify-content:space-between;
+        }
+        .title{
+            
+            height:40%;
+            p{
+                margin:0;
+                padding-top:1rem;
+
+                color:#77bffc;
+                font-size:1.4rem;
+                
+            }
+
+        }
+        .ReadMore_area{
+
+           height:50%;
+            text-align: right;
+            button{
+                background-color: #bce0fd;
+                color:#5eb3fb;
+                border-radius:10px;
+            
+                padding:10px 20px;
+                border-radius:12px;
+                outline-style: none;
+                margin-top:2rem;
+                border:none;
+               
+                
+            }
+        }
+
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card{
+        width:90%;
+
+    }
+}
+

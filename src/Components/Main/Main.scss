@@ -1,0 +1,16 @@
+.blog_display{
+    border: 3px solid black;
+    padding:3rem;
+    
+    display: grid;
+  grid-template-columns: auto auto auto;
+}
+@media only screen and (max-width: 600px) {
+    .blog_display{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+
+}
+
