@@ -1,0 +1,23 @@
+.faq {
+  width: 80%;
+  margin: auto;
+}
+
+.question {
+  width: 100%;
+  padding: 10px;
+}
+
+.q {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b90f0;
+  padding: 10px;
+}
+
+.ans {
+  background-color: #67b0ec;
+  padding: 10px;
+}
