@@ -9,8 +9,9 @@ $backGroud: #bce0fd;
   position: relative;
   // display: flex;
   flex-direction: column;
-  background:url('./component1.svg');
+  background: url("./component1.svg");
   height: 100vh;
+  font-family: "Poppons", "sans-serif";
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,6 +29,12 @@ $backGroud: #bce0fd;
 @media (max-width: 500px) {
   .App {
     font-size: x-small;
+  }
+}
+
+@media (max-width: 400px) {
+  .App {
+    font-size: xx-small;
   }
 }
 

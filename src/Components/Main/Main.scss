@@ -1,32 +1,27 @@
-.blog_display{
-   
-    padding:3rem;
-    
-    display: grid;
+.blog_display {
+  padding: 3rem;
+
+  display: grid;
   grid-template-columns: auto auto auto;
-  .More{
-      
-     text-align: center;
-      
-      &_btn{
-          margin:0 auto;
-      
-          background:white;
-          color:#1b90f0;
-          padding:8px 25px;
-          margin-top:2rem;
-          font-size:1rem;
-          font-weight:bold;
-          border:1px solid #1b90f0;
-      }
+  .More {
+    text-align: center;
+
+    &_btn {
+      margin: 0 auto;
+
+      background: white;
+      color: #1b90f0;
+      padding: 8px 25px;
+      margin-top: 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: 1px solid #1b90f0;
+    }
   }
 }
 @media only screen and (max-width: 600px) {
-    .blog_display{
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-
+  .blog_display {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
-
