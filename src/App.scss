@@ -7,8 +7,9 @@ $backGroud: #bce0fd;
 .App {
   text-align: center;
   position: relative;
-  display: flex;
+  // display: flex;
   flex-direction: column;
+  background:url('./component1.svg');
   height: 100vh;
 }
 
