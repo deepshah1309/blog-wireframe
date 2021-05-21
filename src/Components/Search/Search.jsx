@@ -1,10 +1,9 @@
 import "./Search.scss";
-const Search=()=>{
+const Search=({title})=>{
     return (
         <div className="search_area">
-            
                 <div className="Blog_title">
-                    <h3>BLOG</h3>
+                <h3>{title}</h3>
                     </div>
                 <div className="">
                 <div class="input-container">
