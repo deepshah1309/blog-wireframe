@@ -1,6 +1,7 @@
 .faq {
   width: 80%;
   margin: auto;
+  background-color: #bce0fd;
 }
 
 .question {
@@ -10,14 +11,18 @@
 
 .q {
   display: flex;
+  border-radius:15px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #1b90f0;
+  background-color:white;
+  color:#1b90f0;
   padding: 10px;
+  margin:1.5rem;
 }
-
+//I am student of Maharaja sayajirao university and pursuing my graduation in BE in stream of comp science.Enthusiast about web Development.I have made my personal projects based on react js,node js,express js etc.I look forward for the opportunities which can enhance my skillset.
 .ans {
-  background-color: #67b0ec;
+  background-color: white;
+  color:#1b90f0;
   padding: 10px;
 }

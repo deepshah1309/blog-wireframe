@@ -8,11 +8,16 @@ import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App" style={{background:`url('%PUBLIC_URL%/Assets/component1.svg')`}}>
+    <div className="App">
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Main} />
-        <Route exact path="/faq" component={FAQ} />
+        <Route exact path="/">
+        <Search/>
+        <Main/>
+          </Route>
+        <Route exact path="/faq">
+        <FAQ/>
+        </Route>
       </Switch>
       <Footer />
     </div>
