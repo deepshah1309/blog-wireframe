@@ -6,7 +6,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{background:`url('%PUBLIC_URL%/Assets/component1.svg')`}}>
       <Navbar />
       <Search />
       <Main />

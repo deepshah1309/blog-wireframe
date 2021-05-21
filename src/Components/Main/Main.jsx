@@ -3,7 +3,7 @@ import "./Main.scss";
 const Main=()=>{
     return (
         <div className="blog_display">
-
+                
                 <Card/>
                 <Card/>
                 <Card/>
