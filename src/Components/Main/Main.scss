@@ -30,3 +30,18 @@
 
 }
 
+@media only screen and (min-width: 600px) {
+    .blog_display{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+
+}
+@media only screen and (min-width: 768px) {
+    .blog_display{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
