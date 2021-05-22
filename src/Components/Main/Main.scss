@@ -1,9 +1,10 @@
 .blog_display {
   // padding: 3rem;
-  padding:0 2rem;
-// margin-top:3rem;
+  padding: 0 2rem;
+  // margin-top:3rem;
   display: grid;
   grid-template-columns: auto auto auto;
+
   .More {
     text-align: center;
 
@@ -25,4 +26,11 @@
     display: grid;
     grid-template-columns: auto;
   }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
