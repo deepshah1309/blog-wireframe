@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import "./faq.scss";
 
-const Question = ({ title, info }) => {
+const Question = ({ title, info ,Query,email}) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -15,7 +15,7 @@ const Question = ({ title, info }) => {
           {expanded ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </div>
       </div>
-      {expanded && <div className="ans">{info}</div>}
+      {expanded && <div className="ans">{Query}-by {email}</div>}
     </div>
   );
 };

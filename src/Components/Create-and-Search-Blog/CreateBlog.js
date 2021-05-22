@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FileBase64 from "react-file-base64";
+//import FileBase64 from "react-file-base64";
 import { BiEditAlt } from "react-icons/bi";
 import "./create.scss";
 

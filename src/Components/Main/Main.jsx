@@ -1,6 +1,6 @@
 import Card from "../Card/Card";
 import "./Main.scss";
-import CreateBlog from "../Create and Search Blog/CreateBlog"
+import CreateBlog from "../Create-and-Search-Blog/CreateBlog"
 
 const Main = () => {
     return (
