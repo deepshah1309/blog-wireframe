@@ -2,13 +2,94 @@
   width: 80%;
   margin: auto;
   background-color: #bce0fd;
+  margin-bottom:3rem;
 }
 
 .question {
   width: 100%;
   padding: 10px;
 }
+.FAQ_creation{
+  margin:0 10rem;
+  .TitleBox{
+    color:#53acfb;
+    font-size:1.5rem;
+  }
+//   border:3px solid blue;
+.FAQ_inputbox{
+  
+  text-align: left;
+  margin-bottom:2rem;
 
+  .emailbox{
+    // border:3px solid blue;
+    display: grid;
+    grid-template-areas: auto auto;
+    padding:2rem 3rem;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    border-top:3px solid #bce0fd;
+    border-left:3px solid #bce0fd;
+    border-right:3px solid #bce0fd;
+     
+    .part1{
+     
+      label{
+        padding-right:20%;
+        
+      }
+    }
+    .part2{
+     
+      input[type="email"]{
+        
+        border:none;
+        border-bottom: 2px solid #bce0fd;
+        &:focus{
+          border:none;
+          border-bottom: 2px solid #bce0fd;
+          outline-style: none;
+        }
+      }
+    }
+    
+  }
+  .querybox{
+    border-top:3px solid #bce0fd;
+    border-left:3px solid #bce0fd;
+    border-right:3px solid #bce0fd;
+    border-bottom: 3px solid #bce0fd;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+    text-align:center;
+    padding-top: 2rem;
+    min-height:150px;
+    textarea{
+      margin-top:1rem;
+      width:95%;
+    outline: none;
+    border:none;
+    border-bottom:2px solid #1b90f0;  
+      margin-bottom:1rem;
+    }
+  }
+  .faqsubmit{
+    text-align: center;
+    margin-top:-1rem;
+    
+  .FAQ_POST{
+    color:white;
+    background-color:#2699fb;
+    width:30%;
+    outline-style:none;
+    border:none;
+    padding:5px 10px;
+    border-radius:12px;
+  
+  }
+}
+}
+}
 .q {
   display: flex;
   border-radius:15px;
@@ -20,9 +101,46 @@
   padding: 10px;
   margin:1.5rem;
 }
-//I am student of Maharaja sayajirao university and pursuing my graduation in BE in stream of comp science.Enthusiast about web Development.I have made my personal projects based on react js,node js,express js etc.I look forward for the opportunities which can enhance my skillset.
+
 .ans {
   background-color: white;
   color:#1b90f0;
   padding: 10px;
 }
+//media   Query
+@media (min-width:320px){ 
+.emailbox{
+  display: grid;
+    grid-template-areas: auto;
+}
+.part1{
+  width:100%;
+}
+.part2{
+  width:100%;
+}
+}
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+  .emailbox{
+    display: grid;
+    grid-template-areas: auto;
+    .part1{
+      width:100%;
+    }
+    .part2{
+      width:100%;
+    }
+  }
+ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .emailbox{
+    display: grid;
+    grid-template-columns: auto; 
+    .part1{
+      width:100%;
+    }
+    .part2{
+      width:100%;
+    }
+  }
+ }
