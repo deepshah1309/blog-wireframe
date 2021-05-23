@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,600&family=Balsamiq+Sans:wght@400;700&family=Roboto&display=swap");
 
 $backGroud: #bce0fd;
-
+body{
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
   position: relative;

@@ -2,23 +2,26 @@ import React from "react";
 import "./Blogpost.scss"
 import Review from "../blog/reviews";
 import {useParams} from "react-router-dom";
+import Card from "../Card/Card";
 function BlogPost() {
   const {id}=useParams();
   document.addEventListener('scroll', function (e) {
-    // console.log("body", document.body.scrollHeight);
-    // console.log("imagepart", document.querySelector(".Text").scrollHeight);
-    console.log(window.pageYOffset);
+    var arrow1=document.querySelector(".side-tab1");
+    var arrow2=document.querySelector(".side-tab2");
+  
     if(window.pageYOffset>=612){
-      var arrow1=document.querySelector(".side-tab1");
-         var arrow2=document.querySelector(".side-tab2");
-         arrow1.style.display="block";
-        arrow2.style.display="block";
+     
+         if(arrow1 && arrow2){
+         arrow1.style.visibility="visible";
+        arrow2.style.visibility="visible";
+         }
     }
-    else{
-      const arrow1=document.querySelector(".side-tab1");
-         const arrow2=document.querySelector(".side-tab2");
-         arrow1.style.display="none";
-        arrow2.style.display="none";
+    else if(window.pageYOffset<612){
+      
+         
+         arrow1.style.visibility="hidden";
+        arrow2.style.visibility="hidden";
+         
     }
 
   });
@@ -34,7 +37,7 @@ const right=(e)=>{
     document.location="/blog/"+ids;
 }
  
-  return <div>
+  return <div className="part">
 
     <div>
       <section class="content">
@@ -135,6 +138,18 @@ wish here to give the reader a tour of these uncommon search engines.
       <div className="side-tab2" onClick={right}>
         <i class="fas fa-arrow-right"></i>
       </div>
+    </div>
+    <div>
+    <h1>People also like</h1>
+    <div className="peoplealsolike">
+      
+      
+      <Card id={8}>
+
+      </Card>
+      <Card id={9}></Card>
+      <Card id={10}></Card>
+    </div>
     </div>
   </div>
 }

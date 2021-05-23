@@ -3,7 +3,7 @@
     z-index: 5;
     bottom: 50%;
     right: 0px;
-    display:none;
+    visibility: hidden;
     padding: 15px 30px;
     border-radius: 10px 10px 0 0;
     background-color: #1b90f0;  
@@ -14,7 +14,7 @@
   .side-tab1 {
     position:fixed;
     z-index: 5;
-    display:none;
+    visibility: hidden;
     bottom: 50%;
     left: 0px;
     padding: 15px 30px;
@@ -65,3 +65,18 @@
   border-radius: 20px;
   height:400px;
  }
+ .peoplealsolike{
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: auto auto auto;
+ }
+ @media only screen and (max-width: 600px) {
+  .peoplealsolike {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+.part{
+  width:100vw;
+}
