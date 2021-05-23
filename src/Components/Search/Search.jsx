@@ -12,8 +12,6 @@ const Search=({title})=>{
                     <i class="fas fa-microphone icon"></i>
                 </div>
                 </div>
-                
-           
         </div>
     )
 }
