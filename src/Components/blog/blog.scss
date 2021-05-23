@@ -22,6 +22,8 @@
 .blog {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   align-items: center;
 }
@@ -35,6 +37,11 @@
   justify-content: flex-end;
   align-items: center;
   min-height: 400px;
+}
+
+.reviews {
+  margin-top: 10px;
+  align-self: center;
 }
 
 .search-blog {
