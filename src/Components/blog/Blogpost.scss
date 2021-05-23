@@ -1,0 +1,35 @@
+.side-tab2 {
+    position:absolute;
+    z-index: 5;
+    margin-bottom: 50%;
+    right: 0px;
+    padding: 15px 30px;
+    border-radius: 10px 10px 0 0;
+    background-color: #1b90f0;  
+    color: #ffffff;
+    transform: rotate(-90deg);
+    box-shadow: 0 -3px 7px rgba(0,0,0,0.3);
+  }
+  .side-tab1 {
+    position:absolute;
+    z-index: 5;
+    margin-bottom: 50%;
+    left: 0px;
+    padding: 15px 30px;
+    border-radius: 10px 10px 0 0;
+    background-color: #1b90f0;  
+    color: #ffffff;
+    transform: rotate(-90deg);
+    box-shadow: 0 -3px 7px rgba(0,0,0,0.3);
+  }
+  .content{
+      border-radius: 20px;
+      background-color: lightblue;
+      margin:0 2rem;
+      width:100%;
+      .imageSection{
+            width:95%;
+            height:400px;
+            background-color: #1b90f0;
+      }
+  }
