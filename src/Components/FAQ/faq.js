@@ -11,6 +11,7 @@ function Faq() {
 
   //Hook to change the inputs and keep track of new Object
   const [data,setData]=useState({
+    title: "How is think the IT is the Studio right vendo for me ?",
     email:"",
     Query:""
   });
@@ -58,11 +59,14 @@ function Faq() {
  
 
   const handleSubmit=(e)=>{
-      e.preventDefault();
+      
       //Before Submission Validation here
       //Make API Call(Axios request Here) to insert new Object In FAQ
       //then update the current state Of array
-      setFaqArray({...FaQArray,data});
+      setFaqArray(state=>{
+        state.push(data);
+        return state;
+      });
       
   }
   const handleChange=(e)=>{
