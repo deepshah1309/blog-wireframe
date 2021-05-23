@@ -2,11 +2,13 @@ import Navbar from "./Components/NavBar/NavBar.jsx";
 import Footer from "./Components/Footer/Footer";
 import Main from "./Components/Main/Main";
 import Search from "./Components/Search/Search";
+import Blog from "./Components/blog/blog";
 import FAQ from "./Components/FAQ/faq";
 import CreateBlog from "./Components/Create-and-Search-Blog/CreateBlog";
 
 import "./App.scss";
 import { Route, Switch } from "react-router-dom";
+import blog from "./Components/blog/blog";
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
           <FAQ />
         </Route>
         <Route exact path="/blog/:id">
-          <Search/>
+          <Blog />
         </Route>
       </Switch>
       <Footer />
