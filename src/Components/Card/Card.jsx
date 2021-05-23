@@ -1,7 +1,9 @@
 import "./card.scss";
-const Card=()=>{
+const Card=({id})=>{
     return(
-        <div className="card">
+        <div className="card" onClick={(e)=>{
+            window.location="/blog/"+id;
+        }}>
             <div className="imagepart">
 
             </div>

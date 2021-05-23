@@ -72,7 +72,7 @@ function Faq() {
   const handleChange=(e)=>{
    setData({...data,[e.target.name]:e.target.value})
    
-
+  }
   
   
   return (
