@@ -2,6 +2,7 @@ import React from "react";
 import "./blog.scss";
 import { BsPencilSquare } from "react-icons/bs";
 import CreateBlog from "../Create-and-Search-Blog/CreateBlog";
+import Review from "./reviews";
 import BlogPost from "../blog/blogPost";
 
 function blog() {
@@ -27,6 +28,9 @@ function blog() {
       </div>
       <div>
         <BlogPost />
+      </div>
+      <div className="reviews">
+        <Review />
       </div>
       <CreateBlog />
     </div>
