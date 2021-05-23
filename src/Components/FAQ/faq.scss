@@ -8,6 +8,7 @@
 .question {
   width: 100%;
   padding: 10px;
+  
 }
 .FAQ_creation{
   margin:0 10rem;
@@ -20,7 +21,7 @@
   
   text-align: left;
   margin-bottom:2rem;
-
+background-color: white;
   .emailbox{
     // border:3px solid blue;
     display: grid;
@@ -91,55 +92,36 @@
 }
 }
 .q {
-  display: flex;
+  display:block;
+  
   border-radius:15px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
   background-color:white;
   color:#1b90f0;
   padding: 10px;
+  .part1{
+    width:100%;
+ 
+    font-weight: bolder;
+    font-size:1.5rem;
+    display:flex;
+    padding-left:2rem;
+    padding-top:1rem;
+    justify-content:space-evenly;
+
+  }
+  .part2{
+    display: block;
+    text-align: left;
+    background-color: white;
+    color:#1b90f0;
+    padding-left:3rem;
+    padding-top:1rem;
+    font-size:1.5rem;
+  }
   margin:1.5rem;
 }
-.ans {
-  background-color: white;
-  color:#1b90f0;
-  padding: 10px;
-}
-//media   Query
-@media (min-width:320px){ 
-.emailbox{
-  display: grid;
-    grid-template-areas: auto;
-}
-.part1{
-  width:100%;
-}
-.part2{
-  width:100%;
-}
-}
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
-  .emailbox{
-    display: grid;
-    grid-template-areas: auto;
-    .part1{
-      width:100%;
-    }
-    .part2{
-      width:100%;
-    }
-  }
- }
-@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  .emailbox{
-    display: grid;
-    grid-template-columns: auto; 
-    .part1{
-      width:100%;
-    }
-    .part2{
-      width:100%;
-    }
-  }
- }
+
+

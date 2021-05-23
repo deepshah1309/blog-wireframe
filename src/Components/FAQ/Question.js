@@ -8,14 +8,18 @@ const Question = ({ title, info ,Query,email}) => {
   return (
     <div className="question">
       <div className="q">
-        <h4 onClick={() => setExpanded(!expanded)} className="question-title">
+        <div className="part1">
+        <div onClick={() => setExpanded(!expanded)} className="question-title">
           {title}
-        </h4>
+        </div>
+       
         <div className="btn" onClick={() => setExpanded(!expanded)}>
           {expanded ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </div>
+       </div>
+       {expanded && <div className="part2">{Query}-by {email}</div>}
       </div>
-      {expanded && <div className="ans">{Query}-by {email}</div>}
+     
     </div>
   );
 };
