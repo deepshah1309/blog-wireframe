@@ -3,13 +3,12 @@ import Question from "./Question";
 import Search from "../Search/Search";
 import "./faq.scss";
 
-function Faq() {
+export default function Faq() {
   //Hook to change the inputs and keep track of new Object
-  const [data,setData]=useState({
+  const [data, setData] = useState({
     title: "How is think the IT is the Studio right vendo for me ?",
-    email:"",
-    Query:""
-
+    email: "",
+    Query: "",
   });
   //Here is the demo Array That we will be getting from API Calls
   const [FaQArray, setFaqArray] = useState([
@@ -57,26 +56,21 @@ function Faq() {
     },
   ]);
 
+  const handleSubmit = (e) => {
+    //Before Submission Validation here
+    //Make API Call(Axios request Here) to insert new Object In FAQ
+    //then update the current state Of array
+    setFaqArray((state) => {
+      state.push(data);
+      return state;
+    });
+  };
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
 
-  const handleSubmit=(e)=>{
-      
-      //Before Submission Validation here
-      //Make API Call(Axios request Here) to insert new Object In FAQ
-      //then update the current state Of array
-      setFaqArray(state=>{
-        state.push(data);
-        return state;
-      });
-      
-  }
-  const handleChange=(e)=>{
-   setData({...data,[e.target.name]:e.target.value})
-   
-
-  
-  
   return (
-    <>
+    <div className="F">
       <Search title={"FAQ"} />
       <div className="faq">
         {FaQArray.map((item, index) => {
@@ -96,7 +90,7 @@ function Faq() {
         <div className="FAQ_inputbox">
           <div className="emailbox">
             <div className="part1">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email :</label>
             </div>
             <div className="part2">
               <input
@@ -125,8 +119,6 @@ function Faq() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
-
-export default Faq;
