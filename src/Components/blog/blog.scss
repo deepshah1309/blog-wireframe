@@ -19,12 +19,19 @@
   margin-left: 10px;
 }
 
-.blog {
+.blogPost {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+}
+
+.blog {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -40,7 +47,7 @@
   min-height: 400px;
 }
 
-.reviews {
+.rv {
   margin-top: 10px;
   align-self: center;
 }

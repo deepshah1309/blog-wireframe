@@ -2,14 +2,15 @@ import React from "react";
 import "./blog.scss";
 import { BsPencilSquare } from "react-icons/bs";
 import CreateBlog from "../Create-and-Search-Blog/CreateBlog";
+import Review from "../blog/reviews";
 
 import BlogPost from "../blog/blogPost";
 
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 function Blog() {
-  const id=useParams();
+  const id = useParams();
   return (
-    <div className="blog">
+    <div className="blogPost">
       <div className="search-component">
         <div className="search-blog">
           <div class="input-container">
@@ -28,10 +29,19 @@ function Blog() {
           </button>
         </div>
       </div>
-      <div>
-        <BlogPost id={id}/>
+      <div className="blog">
+        <div>
+          <BlogPost />
+        </div>
+        <div className="rv">
+          <Review />
+        </div>
+        <CreateBlog />
       </div>
-     
+      <div>
+        <BlogPost id={id} />
+      </div>
+
       <CreateBlog />
     </div>
   );
