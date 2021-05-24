@@ -16,7 +16,7 @@ function NavBar() {
                     <Link to="/work" className="navbar-link">Our Work</Link>
                 </li>
                 <li className="navbar-element">
-                    <Link to="/blog" className="navbar-link">Blog</Link>
+                    <Link to="/blogs" className="navbar-link">Blog</Link>
                 </li>
                 <li className="navbar-element">
                     <Link to="/grow" className="navbar-link">Grow with Us</Link>

@@ -56,6 +56,10 @@ export default function Faq() {
     },
   ]);
 
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
   const handleSubmit = (e) => {
     //Before Submission Validation here
     //Make API Call(Axios request Here) to insert new Object In FAQ
@@ -64,9 +68,6 @@ export default function Faq() {
       state.push(data);
       return state;
     });
-  };
-  const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
   };
 
   return (

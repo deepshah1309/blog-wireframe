@@ -19,7 +19,7 @@ function reviews() {
           <div className="review">
             <div className="image">
               {data[0].image ? (
-                <img src={data[0].image} />
+                <img src={data[0].image} alt="review_user" />
               ) : (
                 <BsFillPersonFill />
               )}

@@ -1,0 +1,82 @@
+.side-tab2 {
+    position:fixed;
+    z-index: 5;
+    bottom: 50%;
+    right: 0px;
+    visibility: hidden;
+    padding: 15px 30px;
+    border-radius: 10px 10px 0 0;
+    background-color: #1b90f0;  
+    color: #ffffff;
+    transform: rotate(0deg);
+    box-shadow: 0 -3px 7px rgba(0,0,0,0.3);
+  }
+  .side-tab1 {
+    position:fixed;
+    z-index: 5;
+    visibility: hidden;
+    bottom: 50%;
+    left: 0px;
+    padding: 15px 30px;
+    border-radius: 10px 10px 0 0;
+    background-color: #1b90f0;  
+    color: #ffffff;
+    transform: rotate(0deg);
+    box-shadow: 0 -3px 7px rgba(0,0,0,0.3);
+  }
+  .content{
+      border-radius: 20px;
+      
+      margin:0 2rem;
+      background: inherit;
+      // border:2px solid black;
+      margin-top:-300px;
+      .ImageSection{
+            width:90%;
+            border-radius: 20px;
+            margin:0 auto;
+            height:600px;
+
+            background-color: #bce0fd;
+      }
+      .contentsection{
+        text-align: left;
+        padding:0 4rem;
+        .title{
+          font-size:3rem;
+        }
+        .Text{
+          font-size:2rem;
+         
+            
+        }
+      }
+      .Reviewpart{
+             
+            
+            padding:0 4rem;
+
+      }
+  }
+ .images{
+  float:right;
+  width:500px;
+  background-color: #bce0fd;
+  border-radius: 20px;
+  height:400px;
+ }
+ .peoplealsolike{
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: auto auto auto;
+ }
+ @media only screen and (max-width: 600px) {
+  .peoplealsolike {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+.part{
+  width:100vw;
+}
