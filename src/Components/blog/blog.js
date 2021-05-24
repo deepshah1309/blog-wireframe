@@ -7,7 +7,7 @@ import BlogPost from "../blog/blogPost";
 
 function blog() {
   return (
-    <div className="blog">
+    <div className="blogPost">
       <div className="search-component">
         <div className="search-blog">
           <div class="input-container">
@@ -26,13 +26,15 @@ function blog() {
           </button>
         </div>
       </div>
-      <div>
-        <BlogPost />
+      <div className="blog">
+        <div>
+          <BlogPost />
+        </div>
+        <div className="rv">
+          <Review />
+        </div>
+        <CreateBlog />
       </div>
-      <div className="reviews">
-        <Review />
-      </div>
-      <CreateBlog />
     </div>
   );
 }
